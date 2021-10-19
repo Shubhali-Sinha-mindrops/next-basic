@@ -1,0 +1,9 @@
+/*Files with this '.module.css' extension unlocks a feature called css module.It allows us to scope css classes to react component. And, it is supported out of the box in nextJS projects. */
+
+.detail {
+    text-align: center;
+}
+.detail img {
+    width: 100%;
+
+}
