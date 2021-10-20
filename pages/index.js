@@ -72,3 +72,7 @@ export async function getStaticProps() {
 export default HomePage;
 
 //npm run build is a command need to run before deploy nextjs sites.
+
+
+
+//https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg

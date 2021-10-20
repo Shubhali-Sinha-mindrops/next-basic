@@ -36,7 +36,9 @@ export async function getStaticPaths() {
 
   client.close();
   return {
-    fallback: false, //It allows us to pre-generate some of our pages with some pre-defined id(mmetupId).
+    fallback: 'blocking',         //With blocking, the user cannot see anything before pre-generatd and the finished page will be served.
+    //if it is true not blocking, it means a static page will be automatically generated and on the first generation, the page will not have any data, so we have to face this case, when the page don't have any data to show.
+    //fallback: false, //It allows us to pre-generate some of our pages with some pre-defined id(mmetupId).
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
